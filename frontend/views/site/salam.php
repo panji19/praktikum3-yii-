@@ -1,1 +1,9 @@
-<h1> assalamualaikum </h1>
+<h1> ini adalah halaman salam </h1>
+
+<?= $ucapanSalam ?>
+<br>
+<?= $seseorang ?>
+
+
+
+

@@ -74,11 +74,6 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
-public function actionSalam()
-    {
-        return $this->render('salam');
-    }
-
   
     /**
      * Logs in a user.
@@ -147,6 +142,21 @@ public function actionSalam()
     {
         return $this->render('about');
     }
+
+    public function actionSalam()
+    {
+        $ucapan = "assalamualaikum";
+        $nama = "panji"; 
+
+
+        return $this->render('salam',[
+            "ucapanSalam" => $ucapan,
+            "seseorang" => $nama,
+
+        ]);
+    }
+
+    
 
     /**
      * Signs user up.
